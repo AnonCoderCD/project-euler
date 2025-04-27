@@ -1,0 +1,21 @@
+# Compiled files
+*.o
+*.out
+*.exe
+*.dSYM/
+*.out.dSYM/
+
+# Vim swap/backup files
+*.swp
+*.swo
+*.swn
+*.un~
+
+# Temporary files
+*~
+
+# macOS system files
+.DS_Store
+
+# Build directories
+build/
