@@ -2,18 +2,15 @@
 
 int main()
 {
-    int a = 1, b = 2, sum = 0;
+    int a = 1, b = 1, c = a + b;
+    int sum = 0;
 
-    while (b <= 4000000)
+    while (c < 4000000)
     {
-        if (b % 2 == 0)
-        {
-            sum += b;
-        }
-
-        int next = a + b;
-        a = b;
-        b = sum;
+        sum += c;
+        a = b + c;
+        b = c + a;
+        c = a + b;
     }
 
     printf("Sum of even fibonacci numbers that don't exceed 4 million: %d\n", sum);
